@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C03E9E0291B70200053A432 /* AddShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C03E9DF291B70200053A432 /* AddShopViewController.swift */; };
+		3C3E6A5A2946A5FE006DCE03 /* ShopDrinkDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E6A582946A5FE006DCE03 /* ShopDrinkDB.xcdatamodeld */; };
+		3C5AE9902947DD1B00744E2B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3C5AE98F2947DD1B00744E2B /* FirebaseAnalytics */; };
+		3C5AE9922947DD1B00744E2B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3C5AE9912947DD1B00744E2B /* FirebaseDatabase */; };
+		3C5AE9942947DD1B00744E2B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3C5AE9932947DD1B00744E2B /* FirebaseFirestore */; };
+		3C5AE9962947DD1B00744E2B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3C5AE9952947DD1B00744E2B /* FirebaseStorage */; };
+		3C5AE9A12947E7AF00744E2B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9A02947E7AF00744E2B /* MapViewController.swift */; };
+		3C5AE9A729482CA800744E2B /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9A629482CA800744E2B /* StatsViewController.swift */; };
+		3C5AE9A92948345F00744E2B /* WebSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9A82948345F00744E2B /* WebSearchViewController.swift */; };
+		3C5AE9BC294837C300744E2B /* Shop+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9B6294837C300744E2B /* Shop+CoreDataClass.swift */; };
+		3C5AE9BD294837C300744E2B /* Shop+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9B7294837C300744E2B /* Shop+CoreDataProperties.swift */; };
+		3C5AE9BE294837C300744E2B /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9B8294837C300744E2B /* Order+CoreDataClass.swift */; };
+		3C5AE9BF294837C300744E2B /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9B9294837C300744E2B /* Order+CoreDataProperties.swift */; };
+		3C5AE9C0294837C300744E2B /* Drink+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9BA294837C300744E2B /* Drink+CoreDataClass.swift */; };
+		3C5AE9C1294837C300744E2B /* Drink+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9BB294837C300744E2B /* Drink+CoreDataProperties.swift */; };
+		3C5AE9CB2949191800744E2B /* StatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9CA2949191800744E2B /* StatsCollectionViewCell.swift */; };
+		3C5AE9CF294A41FA00744E2B /* AddDrink2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9CE294A41FA00744E2B /* AddDrink2ViewController.swift */; };
+		3C5AE9D1294A540900744E2B /* EditDrink2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9D0294A540900744E2B /* EditDrink2ViewController.swift */; };
+		3C5AE9D3294A5ABC00744E2B /* MapSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5AE9D2294A5ABC00744E2B /* MapSearchViewController.swift */; };
+		3C5B37252946FE4B00E937A1 /* DrinkDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B37242946FE4B00E937A1 /* DrinkDetailsTableViewCell.swift */; };
+		3C5B3727294729D600E937A1 /* EditDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B3726294729D600E937A1 /* EditDrinkViewController.swift */; };
+		3C5B37292947B2B500E937A1 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B37282947B2B500E937A1 /* OrderViewController.swift */; };
+		3C5B372C2947B3D200E937A1 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B372B2947B3D200E937A1 /* OrderTableViewCell.swift */; };
+		3C5B373F2947D4CF00E937A1 /* EditOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5B373E2947D4CF00E937A1 /* EditOrderViewController.swift */; };
+		3C71F1942946B5CA0098330D /* DrinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C71F1932946B5CA0098330D /* DrinkTableViewCell.swift */; };
+		3C76B3172946A1E500D6626D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C76B3162946A1E500D6626D /* GoogleService-Info.plist */; };
+		3C7ADBB5291235D800604A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7ADBB4291235D800604A34 /* AppDelegate.swift */; };
+		3C7ADBB7291235D800604A34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7ADBB6291235D800604A34 /* SceneDelegate.swift */; };
+		3C7ADBB9291235D800604A34 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7ADBB8291235D800604A34 /* MainViewController.swift */; };
+		3C7ADBBC291235D800604A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7ADBBA291235D800604A34 /* Main.storyboard */; };
+		3C7ADBBE291235DA00604A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7ADBBD291235DA00604A34 /* Assets.xcassets */; };
+		3C7ADBC1291235DA00604A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7ADBBF291235DA00604A34 /* LaunchScreen.storyboard */; };
+		3C7ADBCC291235DA00604A34 /* bobaholicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7ADBCB291235DA00604A34 /* bobaholicTests.swift */; };
+		3C7ADBD6291235DA00604A34 /* bobaholicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7ADBD5291235DA00604A34 /* bobaholicUITests.swift */; };
+		3C7ADBD8291235DA00604A34 /* bobaholicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7ADBD7291235DA00604A34 /* bobaholicUITestsLaunchTests.swift */; };
+		3CDF194C291C5064007E366F /* EditShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDF194B291C5064007E366F /* EditShopViewController.swift */; };
+		3CE874C7291CAF5E00612694 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE874C6291CAF5E00612694 /* MainTableViewCell.swift */; };
+		3CF6328929468C9100EEE816 /* DrinkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6328829468C9100EEE816 /* DrinkDetailsViewController.swift */; };
+		3CF6328B29468CCF00EEE816 /* DrinkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6328A29468CCF00EEE816 /* DrinkTableViewController.swift */; };
+		3CF6328D29468D0900EEE816 /* AddDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF6328C29468D0900EEE816 /* AddDrinkViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C7ADBC8291235DA00604A34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C7ADBA9291235D800604A34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C7ADBB0291235D800604A34;
+			remoteInfo = bobaholic;
+		};
+		3C7ADBD2291235DA00604A34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C7ADBA9291235D800604A34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C7ADBB0291235D800604A34;
+			remoteInfo = bobaholic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C03E9DF291B70200053A432 /* AddShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShopViewController.swift; sourceTree = "<group>"; };
+		3C3E6A592946A5FE006DCE03 /* ShopDrinkDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShopDrinkDB.xcdatamodel; sourceTree = "<group>"; };
+		3C5AE9A02947E7AF00744E2B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3C5AE9A629482CA800744E2B /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		3C5AE9A82948345F00744E2B /* WebSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSearchViewController.swift; sourceTree = "<group>"; };
+		3C5AE9B6294837C300744E2B /* Shop+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shop+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3C5AE9B7294837C300744E2B /* Shop+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shop+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3C5AE9B8294837C300744E2B /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3C5AE9B9294837C300744E2B /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3C5AE9BA294837C300744E2B /* Drink+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drink+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3C5AE9BB294837C300744E2B /* Drink+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Drink+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3C5AE9C529483F1500744E2B /* bobaholic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bobaholic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5AE9C629483F1500744E2B /* bobaholicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bobaholicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5AE9C729483F1500744E2B /* bobaholicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bobaholicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5AE9CA2949191800744E2B /* StatsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C5AE9CE294A41FA00744E2B /* AddDrink2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrink2ViewController.swift; sourceTree = "<group>"; };
+		3C5AE9D0294A540900744E2B /* EditDrink2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDrink2ViewController.swift; sourceTree = "<group>"; };
+		3C5AE9D2294A5ABC00744E2B /* MapSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSearchViewController.swift; sourceTree = "<group>"; };
+		3C5B37242946FE4B00E937A1 /* DrinkDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		3C5B3726294729D600E937A1 /* EditDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDrinkViewController.swift; sourceTree = "<group>"; };
+		3C5B37282947B2B500E937A1 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		3C5B372B2947B3D200E937A1 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		3C5B373E2947D4CF00E937A1 /* EditOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditOrderViewController.swift; sourceTree = "<group>"; };
+		3C71F1932946B5CA0098330D /* DrinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewCell.swift; sourceTree = "<group>"; };
+		3C76B3162946A1E500D6626D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3C7ADBB4291235D800604A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3C7ADBB6291235D800604A34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3C7ADBB8291235D800604A34 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3C7ADBBB291235D800604A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C7ADBBD291235DA00604A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C7ADBC0291235DA00604A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3C7ADBC2291235DA00604A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C7ADBCB291235DA00604A34 /* bobaholicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobaholicTests.swift; sourceTree = "<group>"; };
+		3C7ADBD5291235DA00604A34 /* bobaholicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobaholicUITests.swift; sourceTree = "<group>"; };
+		3C7ADBD7291235DA00604A34 /* bobaholicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bobaholicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CDF194B291C5064007E366F /* EditShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditShopViewController.swift; sourceTree = "<group>"; };
+		3CE874C6291CAF5E00612694 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		3CF6328829468C9100EEE816 /* DrinkDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsViewController.swift; sourceTree = "<group>"; };
+		3CF6328A29468CCF00EEE816 /* DrinkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkTableViewController.swift; sourceTree = "<group>"; };
+		3CF6328C29468D0900EEE816 /* AddDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDrinkViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C7ADBAE291235D800604A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C5AE9922947DD1B00744E2B /* FirebaseDatabase in Frameworks */,
+				3C5AE9942947DD1B00744E2B /* FirebaseFirestore in Frameworks */,
+				3C5AE9902947DD1B00744E2B /* FirebaseAnalytics in Frameworks */,
+				3C5AE9962947DD1B00744E2B /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7ADBC4291235DA00604A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7ADBCE291235DA00604A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C5B372A2947B3AA00E937A1 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				3C5B37282947B2B500E937A1 /* OrderViewController.swift */,
+				3C5B372B2947B3D200E937A1 /* OrderTableViewCell.swift */,
+				3C5B373E2947D4CF00E937A1 /* EditOrderViewController.swift */,
+				3C5AE9B8294837C300744E2B /* Order+CoreDataClass.swift */,
+				3C5AE9B9294837C300744E2B /* Order+CoreDataProperties.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		3C7ADBA8291235D800604A34 = {
+			isa = PBXGroup;
+			children = (
+				3C7ADBB3291235D800604A34 /* bobaholic */,
+				3C7ADBCA291235DA00604A34 /* bobaholicTests */,
+				3C7ADBD4291235DA00604A34 /* bobaholicUITests */,
+				3C5AE9C529483F1500744E2B /* bobaholic.app */,
+				3C5AE9C629483F1500744E2B /* bobaholicTests.xctest */,
+				3C5AE9C729483F1500744E2B /* bobaholicUITests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		3C7ADBB3291235D800604A34 /* bobaholic */ = {
+			isa = PBXGroup;
+			children = (
+				3C7ADBB4291235D800604A34 /* AppDelegate.swift */,
+				3C7ADBB6291235D800604A34 /* SceneDelegate.swift */,
+				3C7ADBBA291235D800604A34 /* Main.storyboard */,
+				3C7ADBBF291235DA00604A34 /* LaunchScreen.storyboard */,
+				3CF6323C29451BF400EEE816 /* Shop */,
+				3CF6323D29451C2B00EEE816 /* Drink */,
+				3C5B372A2947B3AA00E937A1 /* Order */,
+				3C5AE9A02947E7AF00744E2B /* MapViewController.swift */,
+				3C5AE9D2294A5ABC00744E2B /* MapSearchViewController.swift */,
+				3C5AE9A82948345F00744E2B /* WebSearchViewController.swift */,
+				3C5AE9A629482CA800744E2B /* StatsViewController.swift */,
+				3C5AE9CA2949191800744E2B /* StatsCollectionViewCell.swift */,
+				3C7ADBBD291235DA00604A34 /* Assets.xcassets */,
+				3C3E6A582946A5FE006DCE03 /* ShopDrinkDB.xcdatamodeld */,
+				3C76B3162946A1E500D6626D /* GoogleService-Info.plist */,
+				3C7ADBC2291235DA00604A34 /* Info.plist */,
+			);
+			path = bobaholic;
+			sourceTree = "<group>";
+		};
+		3C7ADBCA291235DA00604A34 /* bobaholicTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C7ADBCB291235DA00604A34 /* bobaholicTests.swift */,
+			);
+			path = bobaholicTests;
+			sourceTree = "<group>";
+		};
+		3C7ADBD4291235DA00604A34 /* bobaholicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C7ADBD5291235DA00604A34 /* bobaholicUITests.swift */,
+				3C7ADBD7291235DA00604A34 /* bobaholicUITestsLaunchTests.swift */,
+			);
+			path = bobaholicUITests;
+			sourceTree = "<group>";
+		};
+		3CF6323C29451BF400EEE816 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				3C7ADBB8291235D800604A34 /* MainViewController.swift */,
+				3CE874C6291CAF5E00612694 /* MainTableViewCell.swift */,
+				3C03E9DF291B70200053A432 /* AddShopViewController.swift */,
+				3CDF194B291C5064007E366F /* EditShopViewController.swift */,
+				3C5AE9B6294837C300744E2B /* Shop+CoreDataClass.swift */,
+				3C5AE9B7294837C300744E2B /* Shop+CoreDataProperties.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		3CF6323D29451C2B00EEE816 /* Drink */ = {
+			isa = PBXGroup;
+			children = (
+				3CF6328A29468CCF00EEE816 /* DrinkTableViewController.swift */,
+				3C71F1932946B5CA0098330D /* DrinkTableViewCell.swift */,
+				3CF6328829468C9100EEE816 /* DrinkDetailsViewController.swift */,
+				3C5B37242946FE4B00E937A1 /* DrinkDetailsTableViewCell.swift */,
+				3CF6328C29468D0900EEE816 /* AddDrinkViewController.swift */,
+				3C5AE9CE294A41FA00744E2B /* AddDrink2ViewController.swift */,
+				3C5B3726294729D600E937A1 /* EditDrinkViewController.swift */,
+				3C5AE9D0294A540900744E2B /* EditDrink2ViewController.swift */,
+				3C5AE9BA294837C300744E2B /* Drink+CoreDataClass.swift */,
+				3C5AE9BB294837C300744E2B /* Drink+CoreDataProperties.swift */,
+			);
+			path = Drink;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C7ADBB0291235D800604A34 /* bobaholic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7ADBDB291235DA00604A34 /* Build configuration list for PBXNativeTarget "bobaholic" */;
+			buildPhases = (
+				3C7ADBAD291235D800604A34 /* Sources */,
+				3C7ADBAE291235D800604A34 /* Frameworks */,
+				3C7ADBAF291235D800604A34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = bobaholic;
+			packageProductDependencies = (
+				3C5AE98F2947DD1B00744E2B /* FirebaseAnalytics */,
+				3C5AE9912947DD1B00744E2B /* FirebaseDatabase */,
+				3C5AE9932947DD1B00744E2B /* FirebaseFirestore */,
+				3C5AE9952947DD1B00744E2B /* FirebaseStorage */,
+			);
+			productName = bobaholic;
+			productReference = 3C5AE9C529483F1500744E2B /* bobaholic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C7ADBC6291235DA00604A34 /* bobaholicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7ADBDE291235DA00604A34 /* Build configuration list for PBXNativeTarget "bobaholicTests" */;
+			buildPhases = (
+				3C7ADBC3291235DA00604A34 /* Sources */,
+				3C7ADBC4291235DA00604A34 /* Frameworks */,
+				3C7ADBC5291235DA00604A34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C7ADBC9291235DA00604A34 /* PBXTargetDependency */,
+			);
+			name = bobaholicTests;
+			productName = bobaholicTests;
+			productReference = 3C5AE9C629483F1500744E2B /* bobaholicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3C7ADBD0291235DA00604A34 /* bobaholicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C7ADBE1291235DA00604A34 /* Build configuration list for PBXNativeTarget "bobaholicUITests" */;
+			buildPhases = (
+				3C7ADBCD291235DA00604A34 /* Sources */,
+				3C7ADBCE291235DA00604A34 /* Frameworks */,
+				3C7ADBCF291235DA00604A34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C7ADBD3291235DA00604A34 /* PBXTargetDependency */,
+			);
+			name = bobaholicUITests;
+			productName = bobaholicUITests;
+			productReference = 3C5AE9C729483F1500744E2B /* bobaholicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C7ADBA9291235D800604A34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3C7ADBB0291235D800604A34 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					3C7ADBC6291235DA00604A34 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 3C7ADBB0291235D800604A34;
+					};
+					3C7ADBD0291235DA00604A34 = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 3C7ADBB0291235D800604A34;
+					};
+				};
+			};
+			buildConfigurationList = 3C7ADBAC291235D800604A34 /* Build configuration list for PBXProject "bobaholic" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C7ADBA8291235D800604A34;
+			packageReferences = (
+				3C5AE98E2947DD1B00744E2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 3C7ADBA8291235D800604A34;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C7ADBB0291235D800604A34 /* bobaholic */,
+				3C7ADBC6291235DA00604A34 /* bobaholicTests */,
+				3C7ADBD0291235DA00604A34 /* bobaholicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C7ADBAF291235D800604A34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7ADBC1291235DA00604A34 /* LaunchScreen.storyboard in Resources */,
+				3C76B3172946A1E500D6626D /* GoogleService-Info.plist in Resources */,
+				3C7ADBBE291235DA00604A34 /* Assets.xcassets in Resources */,
+				3C7ADBBC291235D800604A34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7ADBC5291235DA00604A34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7ADBCF291235DA00604A34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C7ADBAD291235D800604A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C71F1942946B5CA0098330D /* DrinkTableViewCell.swift in Sources */,
+				3C5AE9CB2949191800744E2B /* StatsCollectionViewCell.swift in Sources */,
+				3C5AE9BC294837C300744E2B /* Shop+CoreDataClass.swift in Sources */,
+				3CE874C7291CAF5E00612694 /* MainTableViewCell.swift in Sources */,
+				3C03E9E0291B70200053A432 /* AddShopViewController.swift in Sources */,
+				3C5AE9BD294837C300744E2B /* Shop+CoreDataProperties.swift in Sources */,
+				3C3E6A5A2946A5FE006DCE03 /* ShopDrinkDB.xcdatamodeld in Sources */,
+				3C7ADBB9291235D800604A34 /* MainViewController.swift in Sources */,
+				3CF6328B29468CCF00EEE816 /* DrinkTableViewController.swift in Sources */,
+				3C5AE9C0294837C300744E2B /* Drink+CoreDataClass.swift in Sources */,
+				3C7ADBB5291235D800604A34 /* AppDelegate.swift in Sources */,
+				3C5B372C2947B3D200E937A1 /* OrderTableViewCell.swift in Sources */,
+				3C7ADBB7291235D800604A34 /* SceneDelegate.swift in Sources */,
+				3C5AE9C1294837C300744E2B /* Drink+CoreDataProperties.swift in Sources */,
+				3C5B3727294729D600E937A1 /* EditDrinkViewController.swift in Sources */,
+				3C5AE9A729482CA800744E2B /* StatsViewController.swift in Sources */,
+				3CF6328D29468D0900EEE816 /* AddDrinkViewController.swift in Sources */,
+				3C5AE9CF294A41FA00744E2B /* AddDrink2ViewController.swift in Sources */,
+				3C5AE9A12947E7AF00744E2B /* MapViewController.swift in Sources */,
+				3C5B37252946FE4B00E937A1 /* DrinkDetailsTableViewCell.swift in Sources */,
+				3C5AE9D1294A540900744E2B /* EditDrink2ViewController.swift in Sources */,
+				3C5AE9BF294837C300744E2B /* Order+CoreDataProperties.swift in Sources */,
+				3C5AE9BE294837C300744E2B /* Order+CoreDataClass.swift in Sources */,
+				3CF6328929468C9100EEE816 /* DrinkDetailsViewController.swift in Sources */,
+				3C5B373F2947D4CF00E937A1 /* EditOrderViewController.swift in Sources */,
+				3C5AE9D3294A5ABC00744E2B /* MapSearchViewController.swift in Sources */,
+				3CDF194C291C5064007E366F /* EditShopViewController.swift in Sources */,
+				3C5AE9A92948345F00744E2B /* WebSearchViewController.swift in Sources */,
+				3C5B37292947B2B500E937A1 /* OrderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7ADBC3291235DA00604A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7ADBCC291235DA00604A34 /* bobaholicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C7ADBCD291235DA00604A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C7ADBD8291235DA00604A34 /* bobaholicUITestsLaunchTests.swift in Sources */,
+				3C7ADBD6291235DA00604A34 /* bobaholicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C7ADBC9291235DA00604A34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C7ADBB0291235D800604A34 /* bobaholic */;
+			targetProxy = 3C7ADBC8291235DA00604A34 /* PBXContainerItemProxy */;
+		};
+		3C7ADBD3291235DA00604A34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C7ADBB0291235D800604A34 /* bobaholic */;
+			targetProxy = 3C7ADBD2291235DA00604A34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C7ADBBA291235D800604A34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C7ADBBB291235D800604A34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3C7ADBBF291235DA00604A34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C7ADBC0291235DA00604A34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C7ADBD9291235DA00604A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3C7ADBDA291235DA00604A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C7ADBDC291235DA00604A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7QNY927HN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bobaholic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.virginia.cs4720.jss8ny.bobaholic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3C7ADBDD291235DA00604A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7QNY927HN6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bobaholic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.virginia.cs4720.jss8ny.bobaholic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C7ADBDF291235DA00604A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.virginia.cs4720.jss8ny.bobaholicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bobaholic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bobaholic";
+			};
+			name = Debug;
+		};
+		3C7ADBE0291235DA00604A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.virginia.cs4720.jss8ny.bobaholicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bobaholic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bobaholic";
+			};
+			name = Release;
+		};
+		3C7ADBE2291235DA00604A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.virginia.cs4720.jss8ny.bobaholicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = bobaholic;
+			};
+			name = Debug;
+		};
+		3C7ADBE3291235DA00604A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.virginia.cs4720.jss8ny.bobaholicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = bobaholic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C7ADBAC291235D800604A34 /* Build configuration list for PBXProject "bobaholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7ADBD9291235DA00604A34 /* Debug */,
+				3C7ADBDA291235DA00604A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C7ADBDB291235DA00604A34 /* Build configuration list for PBXNativeTarget "bobaholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7ADBDC291235DA00604A34 /* Debug */,
+				3C7ADBDD291235DA00604A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C7ADBDE291235DA00604A34 /* Build configuration list for PBXNativeTarget "bobaholicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7ADBDF291235DA00604A34 /* Debug */,
+				3C7ADBE0291235DA00604A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C7ADBE1291235DA00604A34 /* Build configuration list for PBXNativeTarget "bobaholicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C7ADBE2291235DA00604A34 /* Debug */,
+				3C7ADBE3291235DA00604A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3C5AE98E2947DD1B00744E2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3C5AE98F2947DD1B00744E2B /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C5AE98E2947DD1B00744E2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		3C5AE9912947DD1B00744E2B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C5AE98E2947DD1B00744E2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3C5AE9932947DD1B00744E2B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C5AE98E2947DD1B00744E2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3C5AE9952947DD1B00744E2B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C5AE98E2947DD1B00744E2B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		3C3E6A582946A5FE006DCE03 /* ShopDrinkDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3C3E6A592946A5FE006DCE03 /* ShopDrinkDB.xcdatamodel */,
+			);
+			currentVersion = 3C3E6A592946A5FE006DCE03 /* ShopDrinkDB.xcdatamodel */;
+			path = ShopDrinkDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3C7ADBA9291235D800604A34 /* Project object */;
+}

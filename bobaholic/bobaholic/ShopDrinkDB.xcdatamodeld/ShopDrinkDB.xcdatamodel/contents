@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G115" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Drink" representedClassName="Drink" syncable="YES">
+        <attribute name="ice" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="recommend" optional="YES" attributeType="String"/>
+        <attribute name="sugar" optional="YES" attributeType="String"/>
+        <attribute name="toppings" optional="YES" attributeType="String"/>
+        <relationship name="order" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Order" inverseName="drink" inverseEntity="Order"/>
+        <relationship name="shop" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Shop" inverseName="drink" inverseEntity="Shop"/>
+    </entity>
+    <entity name="Order" representedClassName="Order" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <relationship name="drink" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Drink" inverseName="order" inverseEntity="Drink"/>
+    </entity>
+    <entity name="Shop" representedClassName="Shop" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="drink" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Drink" inverseName="shop" inverseEntity="Drink"/>
+    </entity>
+</model>

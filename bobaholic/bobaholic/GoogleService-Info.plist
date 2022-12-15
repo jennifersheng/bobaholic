@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1084150162684-3p1g70h1mr0glqtkeai9tc6d8tgpq5d9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1084150162684-3p1g70h1mr0glqtkeai9tc6d8tgpq5d9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBV3o03jE1rNKCohm7N128OVPOgWKY4E_0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1084150162684</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.virginia.cs4720.jss8ny.bobaholic</string>
+	<key>PROJECT_ID</key>
+	<string>bobaholic-f365e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bobaholic-f365e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1084150162684:ios:1a91846b6228375d3b2379</string>
+</dict>
+</plist>
